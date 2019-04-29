@@ -16,7 +16,7 @@ export declare interface WalletBackend {
      * ```
      * wallet.on('transaction', (transaction) => {
      *     console.log(`Transaction of ${transaction.totalAmount()} received!`);
-     * })
+     * }
      * ```
      *
      * @event
@@ -30,7 +30,7 @@ export declare interface WalletBackend {
      * ```
      * wallet.on('incomingtx', (transaction) => {
      *     console.log(`Incoming transaction of ${transaction.totalAmount()} received!`);
-     * })
+     * }
      * ```
      *
      * @event
@@ -44,7 +44,7 @@ export declare interface WalletBackend {
      * ```
      * wallet.on('outgoingtx', (transaction) => {
      *     console.log(`Outgoing transaction of ${transaction.totalAmount()} received!`);
-     * })
+     * }
      * ```
      *
      * @event
@@ -58,7 +58,7 @@ export declare interface WalletBackend {
      * ```
      * wallet.on('fusiontx', (transaction) => {
      *     console.log('Fusion transaction found!');
-     * })
+     * }
      * ```
      *
      * @event
@@ -76,7 +76,7 @@ export declare interface WalletBackend {
      * ```
      * wallet.on('createdtx', (transaction) => {
      *      console.log('Transaction created!');
-     * })
+     * }
      * ```
      *
      * @event
@@ -91,7 +91,7 @@ export declare interface WalletBackend {
      * ```
      * wallet.on('sync', (walletHeight, networkHeight) => {
      *     console.log(`Wallet synced! Wallet height: ${walletHeight}, Network height: ${networkHeight}`);
-     * })
+     * }
      * ```
      *
      * @event
@@ -106,7 +106,7 @@ export declare interface WalletBackend {
      * ```
      * wallet.on('desync', (walletHeight, networkHeight) => {
      *     console.log(`Wallet is no longer synced! Wallet height: ${walletHeight}, Network height: ${networkHeight}`);
-     * })
+     * }
      * ```
      *
      * @event
