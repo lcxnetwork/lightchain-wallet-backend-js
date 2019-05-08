@@ -15,12 +15,12 @@ class OurConfig {
          * The amount of decimal places your coin has, e.g. TurtleCoin has two
          * decimals
          */
-        this.decimalPlaces = 2;
+        this.decimalPlaces = 8;
         /**
          * The address prefix your coin uses - you can find this in CryptoNoteConfig.h.
          * In TurtleCoin, this converts to TRTL
          */
-        this.addressPrefix = 3914525;
+        this.addressPrefix = 0xb9;
         /**
          * Request timeout for daemon operations in milliseconds
          */
@@ -28,7 +28,7 @@ class OurConfig {
         /**
          * The block time of your coin, in seconds
          */
-        this.blockTargetTime = 30;
+        this.blockTargetTime = 120;
         /**
          * How often to process blocks, in millseconds
          */
@@ -50,7 +50,7 @@ class OurConfig {
         /**
          * Your coins 'ticker', generally used to refer to the coin, i.e. 123 TRTL
          */
-        this.ticker = 'TRTL';
+        this.ticker = 'LCX';
         /**
          * Most people haven't mined any blocks, so lets not waste time scanning
          * them
@@ -59,7 +59,7 @@ class OurConfig {
         /**
          * The minimum fee allowed for transactions, in ATOMIC units
          */
-        this.minimumFee = 10;
+        this.minimumFee = 100;
         /**
          * Mapping of height to mixin maximum and mixin minimum
          */
@@ -74,13 +74,13 @@ class OurConfig {
         /**
          * The length of a standard address for your coin
          */
-        this.standardAddressLength = 99;
+        this.standardAddressLength = 97;
         /* The length of an integrated address for your coin - It's the same as
            a normal address, but there is a paymentID included in there - since
            payment ID's are 64 chars, and base58 encoding is done by encoding
            chunks of 8 chars at once into blocks of 11 chars, we can calculate
            this automatically */
-        this.integratedAddressLength = 99 + ((64 * 11) / 8);
+        this.integratedAddressLength = 97 + ((64 * 11) / 8);
         /**
          * A replacement function for the JS/C++ underivePublicKey.
          */
